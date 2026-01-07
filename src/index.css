@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #080808;
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel-2: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.10);
+  --neon: #00f3ff;
+  --neon-2: #3a7bff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 70% -10%, rgba(0, 243, 255, 0.14), transparent 60%),
+    radial-gradient(900px 500px at 10% 10%, rgba(58, 123, 255, 0.12), transparent 55%),
+    radial-gradient(800px 500px at 90% 90%, rgba(0, 243, 255, 0.06), transparent 55%),
+    var(--bg);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(0, 243, 255, 0.25);
+}
+
+/* nicer focus ring */
+:focus-visible {
+  outline: 2px solid rgba(0, 243, 255, 0.55);
+  outline-offset: 2px;
+}
+
+/* subtle scrollbar */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 243, 255, 0.25);
+}
