@@ -1,0 +1,13 @@
+{
+  "name": "steezkng-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "resend": "^4.0.0"
+  }
+}
